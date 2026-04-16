@@ -5,7 +5,7 @@ order: 1
 
 # About Me
 
-Hi! I'm **Jieyu Li** (李杰雨), a Ph.D. student at the [MAS Lab](https://mas.fudan.edu.cn/) (Mobile Autonomous Systems Laboratory), School of Computer Science, **Fudan University**. I previously received my M.S. in Electrical and Computer Engineering from **Vanderbilt University** (GPA 4.0/4.0) and B.S. in Electrical Engineering from **Shanghai Jiao Tong University**.
+Hi! I'm **Jieyu Li** (李杰雨), a Ph.D. student at the [MAS Lab](https://fdmas.github.io/) (Mobile Autonomous Systems Laboratory), School of Computer Science, **Fudan University**. I previously received my M.S. in Electrical and Computer Engineering from **Vanderbilt University** (GPA 4.0/4.0) and B.S. in Electrical Engineering from **Shanghai Jiao Tong University**.
 
 My research focuses on **AI for Software Engineering** — specifically leveraging Large Language Models for code vulnerability repair, software performance diagnosis, and automated program analysis.
 
