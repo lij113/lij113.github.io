@@ -35,27 +35,27 @@ permalink: /zh/
 
 <div class="hs-block">
   <h2 class="hs-title"><i class="fas fa-graduation-cap"></i> 教育背景</h2>
-  <div class="edu-list">
-    <div class="edu-item">
-      <div class="edu-period">2026.9 &ndash; 2030</div>
-      <div class="edu-content">
-        <strong>计算机科学博士</strong><br>
-        复旦大学，多媒体安全实验室
+  <div class="table-list">
+    <div class="table-row">
+      <div class="table-left">
+        <div class="table-main">计算机科学博士</div>
+        <div class="table-sub">复旦大学，多媒体安全实验室</div>
       </div>
+      <div class="table-right">2026.9 &ndash; 2030</div>
     </div>
-    <div class="edu-item">
-      <div class="edu-period">2023 &ndash; 2025</div>
-      <div class="edu-content">
-        <strong>电气与计算机工程硕士（GPA 4.0/4.0）</strong><br>
-        范德堡大学
+    <div class="table-row">
+      <div class="table-left">
+        <div class="table-main">电气与计算机工程硕士（GPA 4.0/4.0）</div>
+        <div class="table-sub">范德堡大学</div>
       </div>
+      <div class="table-right">2023 &ndash; 2025</div>
     </div>
-    <div class="edu-item">
-      <div class="edu-period">2019 &ndash; 2023</div>
-      <div class="edu-content">
-        <strong>电气工程学士</strong><br>
-        上海交通大学
+    <div class="table-row">
+      <div class="table-left">
+        <div class="table-main">电气工程学士</div>
+        <div class="table-sub">上海交通大学</div>
       </div>
+      <div class="table-right">2019 &ndash; 2023</div>
     </div>
   </div>
 </div>
@@ -83,27 +83,27 @@ permalink: /zh/
 
 <div class="home-exp">
   <h2 class="section-title"><i class="fas fa-briefcase"></i> 工作经历</h2>
-  <div class="exp-list">
-    <div class="exp-item">
-      <div class="exp-period">2025.11 &ndash; 至今</div>
-      <div class="exp-content">
-        <strong>研究助理</strong> &mdash; 复旦大学，多媒体安全实验室
-        <p>从事智能体安全与多媒体安全研究，导师为钱振兴教授。将于 2026 年 9 月正式入学攻读博士。</p>
+  <div class="table-list">
+    <div class="table-row">
+      <div class="table-left">
+        <div class="table-main">研究助理 &mdash; 复旦大学，多媒体安全实验室</div>
+        <div class="table-sub">从事智能体安全与多媒体安全研究，导师为钱振兴教授。将于 2026 年 9 月正式入学攻读博士。</div>
       </div>
+      <div class="table-right">2025.11 &ndash; 至今</div>
     </div>
-    <div class="exp-item">
-      <div class="exp-period">2025.7 &ndash; 2025.10</div>
-      <div class="exp-content">
-        <strong>研究助理</strong> &mdash; 香港科技大学（HKUST）
-        <p>从事基于大模型的软件工程与智能体系统研究。</p>
+    <div class="table-row">
+      <div class="table-left">
+        <div class="table-main">研究助理 &mdash; 香港科技大学（HKUST）</div>
+        <div class="table-sub">从事基于大模型的软件工程与智能体系统研究。</div>
       </div>
+      <div class="table-right">2025.7 &ndash; 2025.10</div>
     </div>
-    <div class="exp-item">
-      <div class="exp-period">2023 &ndash; 2025</div>
-      <div class="exp-content">
-        <strong>研究助理</strong> &mdash; 范德堡大学 ISIS 实验室
-        <p>参与 SynthFix 项目，开发结合 SFT 与 PPO 的代码漏洞自动修复框架。导师为 Yu Huang 教授和 Kevin Leach 教授。</p>
+    <div class="table-row">
+      <div class="table-left">
+        <div class="table-main">研究助理 &mdash; 范德堡大学 ISIS 实验室</div>
+        <div class="table-sub">参与 SynthFix 项目，开发结合 SFT 与 PPO 的代码漏洞自动修复框架。导师为 Yu Huang 教授和 Kevin Leach 教授。</div>
       </div>
+      <div class="table-right">2023 &ndash; 2025</div>
     </div>
   </div>
 </div>
@@ -281,18 +281,31 @@ permalink: /zh/
 }
 .hs-title i { font-size: 0.85rem; }
 
-/* Education */
-.edu-list { display: flex; flex-direction: column; gap: 0.6rem; }
-.edu-item { display: flex; gap: 0.8rem; font-size: 0.85rem; }
-.edu-period {
+/* Education / Experience table layout */
+.table-list { display: flex; flex-direction: column; gap: 0.7rem; }
+.table-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1.5rem;
+  align-items: start;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+.table-left { min-width: 0; }
+.table-main { font-weight: 600; color: var(--text-color); }
+.table-sub { color: var(--text-muted); margin-top: 0.1rem; }
+.table-right {
   color: #0366d6;
   font-weight: 600;
   font-size: 0.78rem;
   white-space: nowrap;
-  min-width: 80px;
   padding-top: 0.05rem;
+  text-align: right;
 }
-.edu-content { color: var(--text-muted); line-height: 1.5; }
+@media (max-width: 500px) {
+  .table-row { grid-template-columns: 1fr; gap: 0.2rem; }
+  .table-right { text-align: left; }
+}
 
 /* Interests */
 .interests-grid { display: flex; flex-wrap: wrap; gap: 0.4rem; }
