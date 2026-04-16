@@ -10,7 +10,10 @@ permalink: /zh/
 <div class="home-profile">
   <img src="/assets/img/avatar.jpg" alt="李杰雨" class="home-avatar">
   <div class="home-info">
-    <h1 class="home-name">李杰雨 <span class="home-name-cn">Jieyu Li</span></h1>
+    <div class="profile-top">
+      <h1 class="home-name">李杰雨 <span class="home-name-cn">Jieyu Li</span></h1>
+      <a href="/" class="lang-switch-btn"><i class="fas fa-globe"></i> English</a>
+    </div>
     <p class="home-title">研究助理 &middot; 复旦大学多媒体安全实验室（MAS Lab）</p>
     <p class="home-advisor">导师：<a href="https://scholar.google.com/citations?user=90AsMtQAAAAJ&hl=zh-CN" target="_blank">钱振兴教授</a></p>
     <div class="home-links">
@@ -70,7 +73,7 @@ permalink: /zh/
 </div>
 
 <div class="home-pubs">
-  <h2 class="hs-title"><i class="fas fa-book"></i> 论文发表</h2>
+  <h2 class="section-title"><i class="fas fa-book"></i> 论文发表</h2>
   <div class="pub-item">
     <div class="pub-title">SynthFix: Hybrid Neural-Symbolic Framework for Automated Code Vulnerability Repair</div>
     <div class="pub-authors">Yifan Zhang, <strong>Jieyu Li</strong>, Kexin Pei, Yu Huang, Kevin Leach</div>
@@ -79,7 +82,7 @@ permalink: /zh/
 </div>
 
 <div class="home-exp">
-  <h2 class="hs-title"><i class="fas fa-briefcase"></i> 工作经历</h2>
+  <h2 class="section-title"><i class="fas fa-briefcase"></i> 工作经历</h2>
   <div class="exp-list">
     <div class="exp-item">
       <div class="exp-period">2025.11 &ndash; 至今</div>
@@ -102,29 +105,11 @@ permalink: /zh/
         <p>参与 SynthFix 项目，开发结合 SFT 与 PPO 的代码漏洞自动修复框架。导师为 Yu Huang 教授和 Kevin Leach 教授。</p>
       </div>
     </div>
-    <div class="exp-item">
-      <div class="exp-period">2023</div>
-      <div class="exp-content">
-        <strong>数据分析实习生</strong> &mdash; 字节跳动
-      </div>
-    </div>
-    <div class="exp-item">
-      <div class="exp-period">2022</div>
-      <div class="exp-content">
-        <strong>智能能源系统实习生</strong> &mdash; 南方电网
-      </div>
-    </div>
-    <div class="exp-item">
-      <div class="exp-period">2021</div>
-      <div class="exp-content">
-        <strong>PLC 自动化实习生</strong> &mdash; 江苏天楹
-      </div>
-    </div>
   </div>
 </div>
 
 <div class="home-news">
-  <h2 class="hs-title"><i class="fas fa-newspaper"></i> 最新动态</h2>
+  <h2 class="section-title"><i class="fas fa-newspaper"></i> 最新动态</h2>
   <div class="news-timeline">
     <div class="nt-item"><span class="nt-date">2026.4</span><span class="nt-text">论文 <strong>SynthFix</strong> 被 <strong>ACL 2026 Findings</strong> 录用</span></div>
     <div class="nt-item"><span class="nt-date">2025.11</span><span class="nt-text">加入复旦大学多媒体安全实验室担任研究助理</span></div>
@@ -144,7 +129,7 @@ permalink: /zh/
   display: flex;
   gap: 1.5rem;
   align-items: flex-start;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   padding-bottom: 1.5rem;
   border-bottom: 1px solid rgba(0,0,0,0.06);
 }
@@ -160,10 +145,20 @@ permalink: /zh/
 }
 
 .home-info { flex: 1; }
+
+.profile-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.2rem;
+}
+
 .home-name {
   font-size: 1.5rem;
   font-weight: 700;
-  margin: 0 0 0.2rem;
+  margin: 0;
   letter-spacing: -0.02em;
 }
 .home-name-cn {
@@ -172,15 +167,37 @@ permalink: /zh/
   color: var(--text-muted);
   margin-left: 0.4rem;
 }
+
+.lang-switch-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.3rem 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border-radius: 20px;
+  border: 1px solid rgba(3,102,214,0.25);
+  color: #0366d6;
+  background: rgba(3,102,214,0.05);
+  text-decoration: none;
+  transition: background 0.15s, border-color 0.15s, transform 0.15s;
+}
+.lang-switch-btn:hover {
+  background: rgba(3,102,214,0.12);
+  border-color: rgba(3,102,214,0.4);
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+
 .home-title {
   font-size: 0.9rem;
   color: var(--text-muted);
-  margin: 0.1rem 0;
+  margin: 0.3rem 0 0.15rem;
 }
 .home-advisor {
   font-size: 0.85rem;
   color: var(--text-muted);
-  margin: 0.2rem 0 0.7rem;
+  margin: 0.15rem 0 0.8rem;
 }
 .home-advisor a { color: #0366d6; text-decoration: none; }
 .home-advisor a:hover { text-decoration: underline; }
@@ -204,15 +221,16 @@ permalink: /zh/
   background: rgba(3,102,214,0.1);
   border-color: rgba(3,102,214,0.4);
   transform: translateY(-1px);
+  text-decoration: none;
 }
 
 /* Bio */
 .home-bio {
   font-size: 0.93rem;
-  line-height: 1.75;
-  margin-bottom: 1.5rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
 }
-.home-bio p { margin: 0.4rem 0; }
+.home-bio p { margin: 0.5rem 0; }
 .home-bio strong { color: var(--text-color); }
 
 /* Sections grid */
@@ -220,37 +238,51 @@ permalink: /zh/
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.2rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 @media (max-width: 600px) {
   .home-sections { grid-template-columns: 1fr; }
   .home-profile { flex-direction: column; align-items: center; text-align: center; }
   .home-links { justify-content: center; }
+  .profile-top { justify-content: center; flex-direction: column; align-items: center; }
 }
 
 .hs-block {
   background: var(--sidebar-bg);
   border: 1px solid rgba(0,0,0,0.05);
   border-radius: 12px;
-  padding: 1rem 1.2rem;
+  padding: 1.2rem 1.3rem;
 }
 [data-mode="dark"] .hs-block { border-color: rgba(255,255,255,0.05); }
 
+/* Section titles */
+.section-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text-color);
+  margin: 0 0 1.2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #0366d6;
+  display: inline-block;
+}
+.section-title i { color: #0366d6; margin-right: 0.4rem; }
+
 .hs-title {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
   color: #0366d6;
   margin: 0 0 0.8rem;
   display: flex;
   align-items: center;
   gap: 0.4rem;
 }
-.hs-title i { font-size: 0.9rem; }
+.hs-title i { font-size: 0.85rem; }
 
 /* Education */
-.edu-list { display: flex; flex-direction: column; gap: 0.5rem; }
+.edu-list { display: flex; flex-direction: column; gap: 0.6rem; }
 .edu-item { display: flex; gap: 0.8rem; font-size: 0.85rem; }
 .edu-period {
   color: #0366d6;
@@ -258,14 +290,14 @@ permalink: /zh/
   font-size: 0.78rem;
   white-space: nowrap;
   min-width: 80px;
-  padding-top: 0.1rem;
+  padding-top: 0.05rem;
 }
 .edu-content { color: var(--text-muted); line-height: 1.5; }
 
 /* Interests */
-.interests-grid { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+.interests-grid { display: flex; flex-wrap: wrap; gap: 0.4rem; }
 .interest-tag {
-  padding: 0.2rem 0.6rem;
+  padding: 0.22rem 0.65rem;
   font-size: 0.78rem;
   border-radius: 14px;
   background: rgba(3,102,214,0.08);
@@ -273,9 +305,11 @@ permalink: /zh/
   font-weight: 500;
 }
 
+/* Content sections spacing */
+.home-pubs, .home-exp, .home-news { margin-bottom: 2rem; }
+
 /* News */
-.home-news, .home-pubs, .home-exp { margin-bottom: 1.5rem; }
-.news-timeline { display: flex; flex-direction: column; gap: 0.5rem; }
+.news-timeline { display: flex; flex-direction: column; gap: 0.6rem; }
 .nt-item {
   display: flex;
   gap: 0.8rem;
@@ -289,23 +323,23 @@ permalink: /zh/
   font-size: 0.78rem;
   white-space: nowrap;
   min-width: 80px;
-  padding-top: 0.05rem;
+  padding-top: 0.02rem;
 }
 .nt-text strong { color: var(--text-color); }
 
 /* Publications */
 .pub-item {
   border-left: 3px solid #0366d6;
-  padding: 0.8rem 1rem;
+  padding: 1rem 1.2rem;
   background: rgba(3,102,214,0.03);
-  border-radius: 0 8px 8px 0;
+  border-radius: 0 10px 10px 0;
 }
-.pub-title { font-size: 0.95rem; font-weight: 600; margin-bottom: 0.3rem; }
-.pub-authors { font-size: 0.85rem; color: var(--text-muted); }
+.pub-title { font-size: 0.98rem; font-weight: 600; margin-bottom: 0.4rem; color: var(--text-color); }
+.pub-authors { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.2rem; }
 .pub-venue { font-size: 0.83rem; color: var(--text-muted); }
 
 /* Experience */
-.exp-list { display: flex; flex-direction: column; gap: 0.8rem; }
+.exp-list { display: flex; flex-direction: column; gap: 1rem; }
 .exp-item { display: flex; gap: 0.8rem; }
 .exp-period {
   color: #0366d6;
@@ -315,7 +349,7 @@ permalink: /zh/
   min-width: 80px;
   padding-top: 0.05rem;
 }
-.exp-content { font-size: 0.88rem; color: var(--text-muted); }
+.exp-content { font-size: 0.88rem; color: var(--text-muted); line-height: 1.55; }
 .exp-content strong { color: var(--text-color); font-weight: 600; }
-.exp-content p { margin: 0.2rem 0 0; line-height: 1.5; }
+.exp-content p { margin: 0.3rem 0 0; line-height: 1.55; }
 </style>
