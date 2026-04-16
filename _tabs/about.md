@@ -5,15 +5,17 @@ order: 1
 
 # About Me
 
-Hi! I'm **Jieyu Li** (李杰雨), a Master's student in Electrical and Computer Engineering at **Vanderbilt University** (GPA 4.0/4.0). I received my B.S. in Electrical Engineering from **Shanghai Jiao Tong University**.
+Hi! I'm **Jieyu Li** (李杰雨), a Ph.D. student at the [MAS Lab](https://mas.fudan.edu.cn/) (Mobile Autonomous Systems Laboratory), School of Computer Science, **Fudan University**. I previously received my M.S. in Electrical and Computer Engineering from **Vanderbilt University** (GPA 4.0/4.0) and B.S. in Electrical Engineering from **Shanghai Jiao Tong University**.
 
-My research focuses on **AI for Software Engineering** — specifically leveraging Large Language Models for code vulnerability repair, software performance diagnosis, and automated program analysis. I'm broadly interested in the intersection of NLP, compiler analysis, and machine learning systems.
+My research focuses on **AI for Software Engineering** — specifically leveraging Large Language Models for code vulnerability repair, software performance diagnosis, and automated program analysis.
 
 ## Research
 
-I'm currently a Research Assistant advised by [Prof. Yu Huang](https://engineering.vanderbilt.edu/bio/yu-huang) at Vanderbilt, where I developed **SynthFix**, a hybrid neural-symbolic framework combining supervised fine-tuning (SFT) with proximal policy optimization (PPO) for automated code vulnerability repair. Accepted as a **Findings Paper** at **ACL 2026**. 12,148 submissions, 18% acceptance rate as Findings.
+At Fudan's MAS Lab, I'm working on autonomous agent systems and their applications in software engineering.
 
-Previously, I worked with [Prof. Zishuo Ding](https://www.dings.idv.tw/) at HKUST(GZ) on LLM-based differential performance profiling, achieving a 57% improvement in fault localization compared to baseline methods.
+Previously, I developed **[SynthFix](https://openreview.net/forum?id=)** at Vanderbilt (advised by [Prof. Yu Huang](https://engineering.vanderbilt.edu/bio/yu-huang)), a hybrid neural-symbolic framework combining SFT and PPO for automated code vulnerability repair. **Accepted as a Findings Paper at ACL 2026** (18% acceptance rate, 12,148 submissions).
+
+I also worked with [Prof. Zishuo Ding](https://www.dings.idv.tw/) at HKUST(GZ) on LLM-based differential performance profiling, achieving a 57% improvement in fault localization.
 
 ## Projects
 
@@ -23,7 +25,7 @@ Previously, I worked with [Prof. Zishuo Ding](https://www.dings.idv.tw/) at HKUS
 
 ## Experience
 
-I've interned at **ByteDance** (data analytics), **South China Power Grid** (smart energy systems), and **Jiangsu Tianying** (PLC automation for waste-to-energy). These experiences shaped my interest in applying AI to real-world engineering problems.
+I've interned at **ByteDance** (data analytics), **South China Power Grid** (smart energy systems), and **Jiangsu Tianying** (PLC automation for waste-to-energy).
 
 ## Contact
 
