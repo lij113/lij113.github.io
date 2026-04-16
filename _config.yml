@@ -1,67 +1,27 @@
 # The Site Configuration
-
-# Import the theme
 theme: jekyll-theme-chirpy
-
-# The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
 lang: en
 
-# Change to your timezone › https://kevinnovak.github.io/Time-Zone-Picker
-timezone:
-
-# jekyll-seo-tag settings
 title: 李杰雨
-tagline: Ph.D. @ Fudan MAS Lab &middot; Agent Security
+tagline: Agent Security &middot; Fudan University
 description: >-
-  Personal homepage of Jieyu Li &mdash; Ph.D. student at Fudan University, researching Agent Security.
+  Personal homepage of Jieyu Li &mdash; Ph.D. student at Fudan University MAS Lab, researching Agent Security.
 url: "https://lij113.github.io"
 
 github:
   username: lij113
 
-twitter:
-  username: Jerry113113
-
 social:
   name: Jieyu Li
   email: jieyu.li@vanderbilt.edu
   links:
-    - https://twitter.com/Jerry113113
     - https://github.com/lij113
 
-google_site_verification:
-google_analytics:
-  id:
-
 theme_mode:
-
-img_cdn:
 
 avatar: /assets/img/avatar.jpg
 
 toc: true
-
-comments:
-  active:
-  disqus:
-    shortname:
-  utterances:
-    repo:
-    issue_term:
-  giscus:
-    repo:
-    repo_id:
-    category:
-    category_id:
-    mapping:
-    input_position:
-    lang:
-    reactions_enabled:
-
-assets:
-  self_host:
-    enabled:
-    env:
 
 pwa:
   enabled: false
@@ -69,16 +29,6 @@ pwa:
 paginate: 10
 
 baseurl: ""
-
-kramdown:
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    css_class: highlight
-    span:
-      line_numbers: false
-    block:
-      line_numbers: true
-      start_line: 1
 
 collections:
   tabs:
@@ -88,33 +38,10 @@ collections:
 defaults:
   - scope:
       path: ""
-      type: posts
-    values:
-      layout: post
-      comments: true
-      toc: true
-      permalink: /posts/:title/
-  - scope:
-      path: _drafts
-    values:
-      comments: false
-  - scope:
-      path: ""
       type: tabs
     values:
       layout: page
       permalink: /:title/
-  - scope:
-      path: assets/img/favicons
-    values:
-      swcache: true
-  - scope:
-      path: assets/js/dist
-    values:
-      swcache: true
-
-sass:
-  style: compressed
 
 compress_html:
   clippings: all
@@ -130,13 +57,12 @@ exclude:
   - "*.gemspec"
   - docs
   - tools
-  - README.md
   - LICENSE
   - rollup.config.js
   - package*.json
 
 jekyll-archives:
-  enabled: [categories, tags]
+  enabled: []
   layouts:
     category: category
     tag: tag
