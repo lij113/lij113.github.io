@@ -11,7 +11,7 @@ My research focuses on **AI for Software Engineering** — specifically leveragi
 
 ## Research
 
-At Fudan's MAS Lab, I'm working on autonomous agent systems and their applications in software engineering.
+At Fudan's MAS Lab (advised by [Prof. Zhenxing Qian](https://scholar.google.com/citations?user=90AsMtQAAAAJ&hl=zh-CN)), I'm working on autonomous agent systems and their applications in software engineering.
 
 Previously, I developed **[SynthFix](https://openreview.net/forum?id=)** at Vanderbilt (advised by [Prof. Yu Huang](https://engineering.vanderbilt.edu/bio/yu-huang)), a hybrid neural-symbolic framework combining SFT and PPO for automated code vulnerability repair. **Accepted as a Findings Paper at ACL 2026** (18% acceptance rate, 12,148 submissions).
 
