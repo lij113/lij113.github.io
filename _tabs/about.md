@@ -11,7 +11,7 @@ My research focuses on **AI for Software Engineering** — specifically leveragi
 
 ## Research
 
-I'm currently a Research Assistant advised by [Prof. Yu Huang](https://engineering.vanderbilt.edu/bio/yu-huang) at Vanderbilt, where I developed **SynthFix**, a hybrid neural-symbolic framework combining supervised fine-tuning (SFT) with proximal policy optimization (PPO) for automated code vulnerability repair. This work is currently under review at the ACL Rolling Review (ARR).
+I'm currently a Research Assistant advised by [Prof. Yu Huang](https://engineering.vanderbilt.edu/bio/yu-huang) at Vanderbilt, where I developed **SynthFix**, a hybrid neural-symbolic framework combining supervised fine-tuning (SFT) with proximal policy optimization (PPO) for automated code vulnerability repair. Accepted as a **Findings Paper** at **ACL 2026**. 12,148 submissions, 18% acceptance rate as Findings.
 
 Previously, I worked with [Prof. Zishuo Ding](https://www.dings.idv.tw/) at HKUST(GZ) on LLM-based differential performance profiling, achieving a 57% improvement in fault localization compared to baseline methods.
 
