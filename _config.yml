@@ -11,9 +11,9 @@ timezone:
 
 # jekyll-seo-tag settings
 title: Jieyu Li
-tagline: Ph.D. student at Fudan MAS Lab
+tagline: Ph.D. @ Fudan MAS Lab &middot; AI for Software Engineering
 description: >-
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
+  Personal homepage of Jieyu Li &mdash; Ph.D. student at Fudan University, researching AI for Software Engineering.
 url: "https://lij113.github.io"
 
 github:
