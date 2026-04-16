@@ -5,17 +5,15 @@ order: 1
 
 # About Me
 
-Hi! I'm **Jieyu Li** (李杰雨), a Ph.D. student at the [MAS Lab](https://fdmas.github.io/) (Mobile Autonomous Systems Laboratory), School of Computer Science, **Fudan University**, advised by [Prof. Zhenxing Qian](https://scholar.google.com/citations?user=90AsMtQAAAAJ&hl=zh-CN).
+Hi! I'm **Jieyu Li** (李杰雨), a Ph.D. student at the **Multimedia Security Lab (MAS Lab)**, School of Computer Science, **Fudan University**, advised by [Prof. Zhenxing Qian](https://scholar.google.com/citations?user=90AsMtQAAAAJ&hl=zh-CN).
 
 I previously received my M.S. in Electrical and Computer Engineering from **Vanderbilt University** (GPA 4.0/4.0) and B.S. in Electrical Engineering from **Shanghai Jiao Tong University**.
 
-My research focuses on **AI for Software Engineering** &mdash; specifically leveraging Large Language Models for code vulnerability repair, software performance diagnosis, and automated program analysis.
+My research focuses on **Agent Security** &mdash; ensuring the safety, reliability, and trustworthiness of autonomous AI agent systems.
 
-I build autonomous agent systems and explore their applications in software engineering, bridging the gap between cutting-edge AI research and practical software development.
+<div class="quick-nav" markdown="1">
 
-<div class="highlight-links" markdown="1">
-
-[:rocket: Projects](/projects/) &nbsp;&middot;&nbsp; [:memo: Publications](/publications/) &nbsp;&middot;&nbsp; [:scroll: CV (coming soon)](#)
+[:microscope: Publications](/publications/) &nbsp;&middot;&nbsp; [:rocket: Projects](/projects/) &nbsp;&middot;&nbsp; [:file_folder: Archives](/archives/)
 
 </div>
 
@@ -29,26 +27,34 @@ I build autonomous agent systems and explore their applications in software engi
 
 ## Experience
 
-- **ByteDance** &mdash; Data Analytics Intern
-- **South China Power Grid** &mdash; Smart Energy Systems Intern
-- **Jiangsu Tianying** &mdash; PLC Automation for Waste-to-Energy
+| Company | Role |
+|---------|------|
+| **ByteDance** | Data Analytics Intern |
+| **South China Power Grid** | Smart Energy Systems Intern |
+| **Jiangsu Tianying** | PLC Automation for Waste-to-Energy |
 
 <style>
-.highlight-links {
-  margin: 1.2rem 0;
-  padding: 0.8rem 1.2rem;
-  background: rgba(3, 102, 214, 0.06);
-  border-radius: 8px;
-  font-size: 0.95rem;
+.quick-nav {
+  margin: 1.5rem 0;
+  padding: 1rem 1.5rem;
+  background: linear-gradient(135deg, rgba(3, 102, 214, 0.08), rgba(46, 164, 79, 0.06));
+  border-radius: 10px;
+  font-size: 1rem;
+  text-align: center;
+  border: 1px solid rgba(3, 102, 214, 0.12);
 }
 
-.highlight-links a {
+.quick-nav a {
   color: #0366d6;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  transition: background 0.15s ease;
 }
 
-.highlight-links a:hover {
-  text-decoration: underline;
+.quick-nav a:hover {
+  background: rgba(3, 102, 214, 0.1);
+  text-decoration: none;
 }
 </style>

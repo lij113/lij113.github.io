@@ -1,0 +1,135 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  /* Use Inter font for better readability */
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Sidebar styling */
+  #sidebar .sidebar-top {
+    padding-bottom: 0.5rem;
+  }
+
+  #sidebar .site-title {
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
+  #sidebar .site-subtitle {
+    font-size: 0.8rem;
+    opacity: 0.7;
+  }
+
+  /* Sidebar avatar */
+  #sidebar .avatar img {
+    border: 3px solid rgba(3, 102, 214, 0.2);
+    transition: border-color 0.2s ease;
+  }
+
+  #sidebar .avatar img:hover {
+    border-color: rgba(3, 102, 214, 0.5);
+  }
+
+  /* Sidebar contact icons */
+  #sidebar .contact-list a {
+    transition: color 0.15s ease, transform 0.15s ease;
+  }
+
+  #sidebar .contact-list a:hover {
+    transform: scale(1.15);
+  }
+
+  /* Sidebar navigation tabs */
+  #sidebar .nav-list .nav-item a {
+    border-radius: 8px;
+    transition: background 0.15s ease, color 0.15s ease;
+    font-weight: 500;
+  }
+
+  #sidebar .nav-list .nav-item a:hover {
+    background: rgba(3, 102, 214, 0.08);
+  }
+
+  #sidebar .nav-list .nav-item.active a {
+    background: rgba(3, 102, 214, 0.12);
+    color: #0366d6;
+    font-weight: 600;
+  }
+
+  /* Main content area */
+  #main-wrapper {
+    border-radius: 12px;
+  }
+
+  /* Smooth page transitions */
+  #main-wrapper .post-content,
+  #main-wrapper .page-content {
+    animation: fadeIn 0.25s ease;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Better heading styles */
+  h1, h2, h3 {
+    letter-spacing: -0.01em;
+  }
+
+  /* Link hover effect */
+  .post-content a:not(.btn),
+  .page-content a:not(.btn) {
+    text-decoration: none;
+    border-bottom: 1px solid rgba(3, 102, 214, 0.3);
+    transition: border-color 0.15s ease;
+  }
+
+  .post-content a:not(.btn):hover,
+  .page-content a:not(.btn):hover {
+    border-bottom-color: #0366d6;
+  }
+
+  /* Table styling */
+  table {
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  table th {
+    background: rgba(3, 102, 214, 0.06);
+    font-weight: 600;
+  }
+
+  table td, table th {
+    padding: 0.6rem 1rem;
+  }
+
+  /* Selection color */
+  ::selection {
+    background: rgba(3, 102, 214, 0.2);
+  }
+
+  /* Dark mode adjustments */
+  [data-mode="dark"] .publication-item {
+    background: linear-gradient(135deg, rgba(3, 102, 214, 0.08), transparent);
+  }
+
+  [data-mode="dark"] .project-card:hover {
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  }
+
+  [data-mode="dark"] .tag {
+    background: rgba(3, 102, 214, 0.15);
+  }
+
+  [data-mode="dark"] .quick-nav {
+    background: linear-gradient(135deg, rgba(3, 102, 214, 0.12), rgba(46, 164, 79, 0.08));
+    border-color: rgba(3, 102, 214, 0.2);
+  }
+</style>

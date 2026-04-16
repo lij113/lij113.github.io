@@ -11,9 +11,9 @@ timezone:
 
 # jekyll-seo-tag settings
 title: Jieyu Li
-tagline: Ph.D. @ Fudan MAS Lab &middot; AI for Software Engineering
+tagline: Ph.D. @ Fudan MAS Lab &middot; Agent Security
 description: >-
-  Personal homepage of Jieyu Li &mdash; Ph.D. student at Fudan University, researching AI for Software Engineering.
+  Personal homepage of Jieyu Li &mdash; Ph.D. student at Fudan University, researching Agent Security.
 url: "https://lij113.github.io"
 
 github:
@@ -64,7 +64,7 @@ assets:
     env:
 
 pwa:
-  enabled: true
+  enabled: false
 
 paginate: 10
 
