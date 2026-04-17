@@ -10,8 +10,18 @@ layout: compress
     <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f7f7f7">
     <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1b1b1e">
 
-    <title>{% if page.title %}{{ page.title }} | {% endif %}{% if page.lang == 'zh' %}Jieyu Li{% else %}李杰雨{% endif %}</title>
+    <title>{% if page.title %}{{ page.title }} | {% endif %}Jieyu Li · 李杰雨</title>
     <meta name="description" content="{{ page.description | default: site.description }}">
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    <link rel="alternate" hreflang="en" href="{{ '/' | absolute_url }}">
+    <link rel="alternate" hreflang="zh-CN" href="{{ '/zh/' | absolute_url }}">
+    <link rel="alternate" hreflang="x-default" href="{{ '/' | absolute_url }}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}Jieyu Li · 李杰雨">
+    <meta property="og:description" content="{{ page.description | default: site.description }}">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:image" content="{{ '/assets/img/avatar.jpg' | absolute_url }}">
+    <meta name="twitter:card" content="summary">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,17 +37,18 @@ layout: compress
   </head>
 
   <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="site-header">
       <div class="header-inner">
-        <a href="/" class="site-brand">No Retreat. No Surrender.</a>
+        <a href="/" class="site-brand">Jieyu Li · 李杰雨</a>
         <nav class="site-nav">
-          <a href="/">EN</a>
-          <a href="/zh/">中文</a>
+          <a href="/" {% if page.lang != 'zh' %}class="active" aria-current="page"{% endif %}>EN</a>
+          <a href="/zh/" {% if page.lang == 'zh' %}class="active" aria-current="page"{% endif %}>中文</a>
         </nav>
       </div>
     </header>
 
-    <main class="site-main">
+    <main class="site-main" id="main-content">
       <div class="main-content">
         {{ content }}
       </div>
@@ -86,6 +97,26 @@ layout: compress
 
     a { color: var(--accent); text-decoration: none; }
     a:hover { text-decoration: underline; }
+    a:focus-visible {
+      outline: 3px solid rgba(3,102,214,0.28);
+      outline-offset: 3px;
+      border-radius: 6px;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: 1rem;
+      top: 0.8rem;
+      z-index: 200;
+      transform: translateY(-140%);
+      padding: 0.35rem 0.7rem;
+      border-radius: 8px;
+      background: var(--accent);
+      color: #fff;
+      font-size: 0.85rem;
+      transition: transform 0.15s;
+    }
+    .skip-link:focus { transform: translateY(0); text-decoration: none; }
 
     /* ===== HEADER ===== */
     .site-header {
@@ -114,7 +145,7 @@ layout: compress
       font-size: 1.1rem;
       color: var(--text);
       text-decoration: none;
-      letter-spacing: -0.02em;
+      letter-spacing: 0;
     }
 
     .site-nav {
@@ -133,6 +164,10 @@ layout: compress
       color: var(--accent);
       background: var(--accent-light);
       text-decoration: none;
+    }
+    .site-nav a.active {
+      color: var(--accent);
+      background: var(--accent-light);
     }
 
     /* ===== MAIN ===== */
@@ -177,7 +212,7 @@ layout: compress
     .home-name {
       font-size: 1.5rem;
       font-weight: 700;
-      letter-spacing: -0.02em;
+      letter-spacing: 0;
       margin-bottom: 0.2rem;
     }
     .home-name-cn {
@@ -273,7 +308,7 @@ layout: compress
     .section-title {
       font-size: 1.4rem;
       font-weight: 700;
-      letter-spacing: -0.02em;
+      letter-spacing: 0;
       margin-bottom: 1.2rem;
       padding-bottom: 0.5rem;
       border-bottom: 2px solid var(--accent);
@@ -367,7 +402,7 @@ layout: compress
     .page-heading {
       font-size: 1.6rem;
       font-weight: 700;
-      letter-spacing: -0.02em;
+      letter-spacing: 0;
       margin-bottom: 1.5rem;
       padding-bottom: 0.5rem;
       border-bottom: 2px solid var(--accent);
@@ -376,6 +411,8 @@ layout: compress
 
     /* ===== MOBILE ===== */
     @media (max-width: 600px) {
+      .header-inner { padding: 0 1rem; }
+      .site-brand { font-size: 0.95rem; }
       .site-nav a { font-size: 0.82rem; padding: 0.3rem 0.5rem; }
     }
     </style>

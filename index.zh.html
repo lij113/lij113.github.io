@@ -9,16 +9,17 @@ permalink: /zh/
 <div class="home-intro">
 
 <div class="home-profile">
-  <img src="/assets/img/avatar.jpg" alt="李杰雨" class="home-avatar">
+  <img src="/assets/img/avatar.jpg" alt="李杰雨肖像" class="home-avatar" width="110" height="110" decoding="async" fetchpriority="high">
   <div class="home-info">
     <div class="profile-top">
       <h1 class="home-name">李杰雨 <span class="home-name-cn">Jieyu Li</span></h1>
+      <a href="/" class="lang-switch-btn" aria-label="切换到英文"><i class="fas fa-language"></i> EN</a>
     </div>
     <p class="home-title">研究助理 &middot; 复旦大学多媒体安全实验室（MAS Lab）</p>
-    <p class="home-advisor">导师：<a href="https://scholar.google.com/citations?user=90AsMtQAAAAJ&hl=zh-CN" target="_blank">钱振兴教授</a></p>
+    <p class="home-advisor">导师：<a href="https://scholar.google.com/citations?user=90AsMtQAAAAJ&hl=zh-CN" target="_blank" rel="noopener noreferrer">钱振兴教授</a></p>
     <div class="home-links">
       <a href="mailto:jieyu.li@vanderbilt.edu" class="hl-item"><i class="fas fa-envelope"></i> 邮件</a>
-      <a href="https://github.com/lij113" target="_blank" class="hl-item"><i class="fab fa-github"></i> GitHub</a>
+      <a href="https://github.com/lij113" target="_blank" rel="noopener noreferrer" class="hl-item"><i class="fab fa-github"></i> GitHub</a>
     </div>
   </div>
 </div>
@@ -26,7 +27,22 @@ permalink: /zh/
 <div class="home-bio">
   <p>你好！我是<strong>李杰雨</strong>，目前是复旦大学计算机学院<strong>多媒体安全实验室（MAS Lab）</strong>的研究助理，将于 <strong>2026 年 9 月</strong>正式入学攻读博士学位（预计 4 年毕业）。</p>
   <p>我的研究方向包括：<strong>智能体安全（Agent Security）</strong>、<strong>多媒体安全（Multimedia Security）</strong> 以及<strong>编程智能体（LLM4SE）</strong>。</p>
-  <p>在攻读博士之前，我本科毕业于<strong>上海交通大学</strong>（导师：<a href="https://see.sjtu.edu.cn/jiaoshiml/qianyong.html" target="_blank">钱勇教授</a>），硕士毕业于<strong>范德堡大学</strong>（导师：<a href="https://engineering.vanderbilt.edu/bio/yu-huang/" target="_blank">黄羽教授</a>）。</p>
+  <p>在攻读博士之前，我本科毕业于<strong>上海交通大学</strong>（导师：<a href="https://see.sjtu.edu.cn/jiaoshiml/qianyong.html" target="_blank" rel="noopener noreferrer">钱勇教授</a>），硕士毕业于<strong>范德堡大学</strong>（导师：<a href="https://engineering.vanderbilt.edu/bio/yu-huang/" target="_blank" rel="noopener noreferrer">黄羽教授</a>）。</p>
+</div>
+
+<div class="focus-strip" aria-label="研究方向概览">
+  <div class="focus-item">
+    <span class="focus-label">主要方向</span>
+    <span class="focus-value">智能体安全</span>
+  </div>
+  <div class="focus-item">
+    <span class="focus-label">系统对象</span>
+    <span class="focus-value">自主智能体系统</span>
+  </div>
+  <div class="focus-item">
+    <span class="focus-label">应用场景</span>
+    <span class="focus-value">安全编程智能体</span>
+  </div>
 </div>
 
 <div class="home-sections">
@@ -92,7 +108,7 @@ permalink: /zh/
     <div class="table-row">
       <div class="table-left">
         <div class="table-main">研究助理 &mdash; 香港科技大学（HKUST）</div>
-        <div class="table-sub">从事基于大模型的软件工程与智能体系统研究，导师为<a href="https://personal.hkust-gz.edu.cn/ding/" target="_blank">丁子硕教授</a>。</div>
+        <div class="table-sub">从事基于大模型的软件工程与智能体系统研究，导师为<a href="https://personal.hkust-gz.edu.cn/ding/" target="_blank" rel="noopener noreferrer">丁子硕教授</a>。</div>
       </div>
       <div class="table-right">2025.7 &ndash; 2025.10</div>
     </div>
@@ -157,7 +173,6 @@ permalink: /zh/
   font-size: 1.5rem;
   font-weight: 700;
   margin: 0;
-  letter-spacing: -0.02em;
 }
 .home-name-cn {
   font-weight: 400;
@@ -231,6 +246,39 @@ permalink: /zh/
 .home-bio p { margin: 0.5rem 0; }
 .home-bio strong { color: var(--text-color); }
 
+.focus-strip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.7rem;
+  margin: -0.4rem 0 2rem;
+}
+.focus-item {
+  border: 1px solid rgba(3,102,214,0.14);
+  border-radius: 10px;
+  padding: 0.75rem 0.85rem;
+  background: linear-gradient(180deg, rgba(3,102,214,0.045), rgba(3,102,214,0.018));
+}
+[data-mode="dark"] .focus-item {
+  border-color: rgba(83,155,245,0.18);
+  background: rgba(83,155,245,0.08);
+}
+.focus-label {
+  display: block;
+  color: var(--text-muted);
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.18rem;
+}
+.focus-value {
+  display: block;
+  color: var(--text-color);
+  font-size: 0.9rem;
+  font-weight: 650;
+  line-height: 1.35;
+}
+
 /* Sections grid */
 .home-sections {
   display: grid;
@@ -243,6 +291,7 @@ permalink: /zh/
   .home-profile { flex-direction: column; align-items: center; text-align: center; }
   .home-links { justify-content: center; }
   .profile-top { justify-content: center; flex-direction: column; align-items: center; }
+  .focus-strip { grid-template-columns: 1fr; }
 }
 
 .hs-block {
@@ -257,7 +306,7 @@ permalink: /zh/
 .section-title {
   font-size: 1.35rem;
   font-weight: 700;
-  letter-spacing: -0.02em;
+  letter-spacing: 0;
   color: var(--text-color);
   margin: 0 0 1.2rem;
   padding-bottom: 0.5rem;
@@ -337,6 +386,10 @@ permalink: /zh/
   padding-top: 0.02rem;
 }
 .nt-text strong { color: var(--text-color); }
+@media (max-width: 500px) {
+  .nt-item { display: grid; gap: 0.1rem; }
+  .nt-date { min-width: 0; }
+}
 
 /* Publications */
 .pub-item {
