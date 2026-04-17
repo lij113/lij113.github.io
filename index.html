@@ -8,17 +8,16 @@ description: Ph.D. student at Fudan University MAS Lab. Research on Agent Securi
 <div class="home-intro">
 
 <div class="home-profile">
-  <img src="/assets/img/avatar.jpg" alt="Portrait of Jieyu Li" class="home-avatar" width="110" height="110" decoding="async" fetchpriority="high">
+  <img src="/assets/img/avatar.jpg" alt="Jieyu Li" class="home-avatar">
   <div class="home-info">
     <div class="profile-top">
       <h1 class="home-name">Jieyu Li <span class="home-name-cn">李杰雨</span></h1>
-      <a href="/zh/" class="lang-switch-btn" aria-label="Switch to Chinese"><i class="fas fa-language"></i> 中文</a>
     </div>
     <p class="home-title">Research Assistant &middot; Multimedia Security Lab (MAS Lab) &middot; Fudan University</p>
-    <p class="home-advisor">Advised by <a href="https://scholar.google.com/citations?user=90AsMtQAAAAJ&hl=zh-CN" target="_blank" rel="noopener noreferrer">Prof. Zhenxing Qian</a></p>
+    <p class="home-advisor">Advised by <a href="https://scholar.google.com/citations?user=90AsMtQAAAAJ&hl=zh-CN" target="_blank">Prof. Zhenxing Qian</a></p>
     <div class="home-links">
       <a href="mailto:jieyu.li@vanderbilt.edu" class="hl-item"><i class="fas fa-envelope"></i> Email</a>
-      <a href="https://github.com/lij113" target="_blank" rel="noopener noreferrer" class="hl-item"><i class="fab fa-github"></i> GitHub</a>
+      <a href="https://github.com/lij113" target="_blank" class="hl-item"><i class="fab fa-github"></i> GitHub</a>
     </div>
   </div>
 </div>
@@ -26,22 +25,7 @@ description: Ph.D. student at Fudan University MAS Lab. Research on Agent Securi
 <div class="home-bio">
   <p>Hi! I'm a research assistant at the <strong>Multimedia Security Lab (MAS Lab)</strong>, School of Computer Science, <strong>Fudan University</strong>, and will start my Ph.D. there in <strong>September 2026</strong> (expected graduation in 4 years).</p>
   <p>My research focuses on <strong>Agent Security</strong>, <strong>Multimedia Security</strong>, and <strong>LLM for Software Engineering</strong> (coding agents).</p>
-  <p>Prior to my Ph.D., I completed my B.S. at <strong>Shanghai Jiao Tong University</strong> (advised by <a href="https://see.sjtu.edu.cn/jiaoshiml/qianyong.html" target="_blank" rel="noopener noreferrer">Prof. Yong Qian</a>) and M.S. at <strong>Vanderbilt University</strong> (advised by <a href="https://engineering.vanderbilt.edu/bio/yu-huang/" target="_blank" rel="noopener noreferrer">Prof. Yu Huang</a>).</p>
-</div>
-
-<div class="focus-strip" aria-label="Research focus summary">
-  <div class="focus-item">
-    <span class="focus-label">Primary Focus</span>
-    <span class="focus-value">Agent Security</span>
-  </div>
-  <div class="focus-item">
-    <span class="focus-label">Systems</span>
-    <span class="focus-value">Autonomous Agents</span>
-  </div>
-  <div class="focus-item">
-    <span class="focus-label">Applications</span>
-    <span class="focus-value">Secure Coding Agents</span>
-  </div>
+  <p>Prior to my Ph.D., I completed my B.S. at <strong>Shanghai Jiao Tong University</strong> (advised by <a href="https://see.sjtu.edu.cn/jiaoshiml/qianyong.html" target="_blank">Prof. Yong Qian</a>) and M.S. at <strong>Vanderbilt University</strong> (advised by <a href="https://engineering.vanderbilt.edu/bio/yu-huang/" target="_blank">Prof. Yu Huang</a>).</p>
 </div>
 
 <div class="home-sections">
@@ -107,7 +91,7 @@ description: Ph.D. student at Fudan University MAS Lab. Research on Agent Securi
     <div class="table-row">
       <div class="table-left">
         <div class="table-main">Research Assistant &mdash; Hong Kong University of Science and Technology (HKUST)</div>
-        <div class="table-sub">Research on LLM-based software engineering and agent systems under <a href="https://personal.hkust-gz.edu.cn/ding/" target="_blank" rel="noopener noreferrer">Prof. Zishuo Ding</a>.</div>
+        <div class="table-sub">Research on LLM-based software engineering and agent systems under <a href="https://personal.hkust-gz.edu.cn/ding/" target="_blank">Prof. Zishuo Ding</a>.</div>
       </div>
       <div class="table-right">2025.7 &ndash; 2025.10</div>
     </div>
@@ -172,6 +156,7 @@ description: Ph.D. student at Fudan University MAS Lab. Research on Agent Securi
   font-size: 1.5rem;
   font-weight: 700;
   margin: 0;
+  letter-spacing: -0.02em;
 }
 .home-name-cn {
   font-weight: 400;
@@ -192,27 +177,6 @@ description: Ph.D. student at Fudan University MAS Lab. Research on Agent Securi
 }
 .home-advisor a { color: #0366d6; text-decoration: none; }
 .home-advisor a:hover { text-decoration: underline; }
-
-.lang-switch-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  padding: 0.3rem 0.75rem;
-  font-size: 0.8rem;
-  font-weight: 500;
-  border-radius: 20px;
-  border: 1px solid rgba(3,102,214,0.25);
-  color: #0366d6;
-  background: rgba(3,102,214,0.05);
-  text-decoration: none;
-  transition: background 0.15s, border-color 0.15s, transform 0.15s;
-}
-.lang-switch-btn:hover {
-  background: rgba(3,102,214,0.12);
-  border-color: rgba(3,102,214,0.4);
-  transform: translateY(-1px);
-  text-decoration: none;
-}
 
 .home-links { display: flex; flex-wrap: wrap; gap: 0.4rem; }
 .hl-item {
@@ -245,39 +209,6 @@ description: Ph.D. student at Fudan University MAS Lab. Research on Agent Securi
 .home-bio p { margin: 0.5rem 0; }
 .home-bio strong { color: var(--text-color); }
 
-.focus-strip {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0.7rem;
-  margin: -0.4rem 0 2rem;
-}
-.focus-item {
-  border: 1px solid rgba(3,102,214,0.14);
-  border-radius: 10px;
-  padding: 0.75rem 0.85rem;
-  background: linear-gradient(180deg, rgba(3,102,214,0.045), rgba(3,102,214,0.018));
-}
-[data-mode="dark"] .focus-item {
-  border-color: rgba(83,155,245,0.18);
-  background: rgba(83,155,245,0.08);
-}
-.focus-label {
-  display: block;
-  color: var(--text-muted);
-  font-size: 0.72rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  margin-bottom: 0.18rem;
-}
-.focus-value {
-  display: block;
-  color: var(--text-color);
-  font-size: 0.9rem;
-  font-weight: 650;
-  line-height: 1.35;
-}
-
 /* Sections grid */
 .home-sections {
   display: grid;
@@ -289,8 +220,7 @@ description: Ph.D. student at Fudan University MAS Lab. Research on Agent Securi
   .home-sections { grid-template-columns: 1fr; }
   .home-profile { flex-direction: column; align-items: center; text-align: center; }
   .home-links { justify-content: center; }
-  .profile-top { justify-content: center; flex-direction: column; align-items: center; }
-  .focus-strip { grid-template-columns: 1fr; }
+
 }
 
 .hs-block {
@@ -305,7 +235,7 @@ description: Ph.D. student at Fudan University MAS Lab. Research on Agent Securi
 .section-title {
   font-size: 1.35rem;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: -0.02em;
   color: var(--text-color);
   margin: 0 0 1.2rem;
   padding-bottom: 0.5rem;
@@ -385,10 +315,6 @@ description: Ph.D. student at Fudan University MAS Lab. Research on Agent Securi
   padding-top: 0.02rem;
 }
 .nt-text strong { color: var(--text-color); }
-@media (max-width: 500px) {
-  .nt-item { display: grid; gap: 0.1rem; }
-  .nt-date { min-width: 0; }
-}
 
 /* Publications */
 .pub-item {
